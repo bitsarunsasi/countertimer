@@ -1,0 +1,105 @@
+* {
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px -10px rgba(0, 0, 0, 0.10);
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1.25rem;
+}
+
+.timer {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.25rem;
+    border-radius: 1rem;
+}
+
+.timer .timer__grid {
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.timer .timer__grid .timer__label {
+    font-weight: 400;
+    color: #000;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+}
+
+.timer .timer__grid .timer__count {
+    font-weight: 500;
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-controls {
+    border-radius: 0rem;
+    outline: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0.5rem;
+    display: inline-block;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-pause {
+    background-color: #205e94;
+    color: #fff;
+}
+
+.btn-reset {
+    background-color: #d23332;
+    color: #fff;
+}
+
+.btn-start {
+    background-color: #20b380;
+    color: #fff;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
